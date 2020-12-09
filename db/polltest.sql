@@ -23,21 +23,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `languages`
+-- Table structure for table `candidates`
 --
 
-CREATE TABLE `languages` (
-  `lan_id` int(100) NOT NULL,
+CREATE TABLE `candidates` (
+  `can_id` int(100) NOT NULL,
   `fullname` varchar(10) NOT NULL,
   `about` varchar(255) NOT NULL,
   `votecount` int(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `languages`
+-- Dumping data for table `candidates`
 --
 
-INSERT INTO `languages` (`lan_id`, `fullname`, `about`, `votecount`) VALUES
+INSERT INTO `candidates` (`can_id`, `fullname`, `about`, `votecount`) VALUES
 (1, 'BJP', 'BJP is', 5),
 (2, 'CONGRESS', 'Congress is', 6),
 (3, 'SS', 'SS is', 21),
@@ -105,10 +105,10 @@ INSERT INTO `voters` (`firstname`, `lastname`, `username`, `status`, `voted`) VA
 --
 
 --
--- Indexes for table `languages`
+-- Indexes for table `candidates`
 --
-ALTER TABLE `languages`
-  ADD PRIMARY KEY (`lan_id`);
+ALTER TABLE `candidates`
+  ADD PRIMARY KEY (`can_id`);
 
 --
 -- Indexes for table `loginusers`
@@ -128,10 +128,10 @@ ALTER TABLE `voters`
 --
 
 --
--- AUTO_INCREMENT for table `languages`
+-- AUTO_INCREMENT for table `candidates`
 --
-ALTER TABLE `languages`
-  MODIFY `lan_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE `candidates`
+  MODIFY `can_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `loginusers`
 --

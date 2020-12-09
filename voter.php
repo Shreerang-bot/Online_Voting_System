@@ -15,9 +15,9 @@ include "header_voter.php";
 <center><BR>
 <label><input type="radio" name="lan" value="BJP">  BJP<br></label><br>
 <label><input type="radio" name="lan" value="CONGRESS">CONGRESS<BR></label><br>
-<label><input type="radio" name="lan" value="AAP">   AAP<BR></label><br>
-<label><input type="radio" name="lan" value="NOTA">  NOTA<BR></label><br>
-<label><input type="radio" name="lan" value="NIRDLIY">  NIRDLIY<BR></label><br>
+<label><input type="radio" name="lan" value="AAP">   SS<BR></label><br>
+<label><input type="radio" name="lan" value="NOTA">  AAP<BR></label><br>
+<label><input type="radio" name="lan" value="NIRDLIY">  NCP<BR></label><br>
 
 </font></center><br>
 <?php global $msg; echo $msg; ?>

@@ -17,7 +17,7 @@ if(mysqli_num_rows($sql) > 0 ) {
 		exit();
 }
 else{
-$sql1 =mysqli_query($con, 'UPDATE languages SET votecount = votecount + 1 WHERE fullname = "'.$_POST['lan'].'"');
+$sql1 =mysqli_query($con, 'UPDATE candidates SET votecount = votecount + 1 WHERE fullname = "'.$_POST['lan'].'"');
 $sql2 =mysqli_query($con, 'UPDATE voters SET status="VOTED" WHERE username="'.$_SESSION['SESS_NAME'].'"');
 $sql3 = mysqli_query($con, 'UPDATE voters SET voted= "'.$_POST['lan'].'" WHERE username="'.$_SESSION['SESS_NAME'].'"');
 	if(!$sql1 && !$sql2){

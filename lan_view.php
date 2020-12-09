@@ -12,7 +12,7 @@ include "header_voter.php";
 <center><h3> Voting So Far  </h3></center>
 <?php
 include "connection.php";
-$member = mysqli_query($con, 'SELECT * FROM languages' );
+$member = mysqli_query($con, 'SELECT * FROM candidates' );
 if (mysqli_num_rows($member)== 0 ) {
 	echo '<font color="red">No results found</font>';
 }
@@ -24,7 +24,7 @@ else {
 </tr>';
 while($mb=mysqli_fetch_object($member))
 		{
-			$id=$mb->lan_id;
+			$id=$mb->can_id;
 			$name=$mb->fullname;
 			$vote=$mb->votecount;
 			echo '<tr bgcolor="#BBBEFF">';
